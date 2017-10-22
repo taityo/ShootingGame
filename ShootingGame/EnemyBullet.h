@@ -6,5 +6,6 @@ class EnemyBullet:public Bullet
 public:
 	EnemyBullet(double x, double y, double radius, double xs, double ys);
 	~EnemyBullet();
+	void draw();
 };
 

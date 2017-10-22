@@ -17,7 +17,7 @@ void fireworksEnemy::draw() {
 	Circle(pos, radius).draw(Color(255, 160, 0));
 }
 
-void fireworksEnemy::shot(Player& player) {
+void fireworksEnemy::shot(Player& player, EnemyBulletManager& ebm) {
 
 }
 
@@ -29,7 +29,7 @@ void fireworksEnemy::update(Player& player) {//ƒ‰ƒ“ƒ_ƒ€‚ÈˆÊ’u‚ÉˆÚ“®‚µAƒ‰ƒ“ƒ_ƒ€‚
 				nextPos = Vec2(Random(Window::Width()), Random(Window::Height() - 100));
 			}
 			else {
-				shot(player);
+				shot(player, EnemyBulletManager());//‚±‚±‚ğ•ÏX•K—v‚ª‚ ‚é
 				count++;
 				return;
 			}

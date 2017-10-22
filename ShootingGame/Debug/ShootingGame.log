@@ -1,8 +1,3 @@
-﻿cl : コマンド ライン warning D9030: '/Gm' はマルチプロセシングと互換性がありません。/MP スイッチを無視します
-  fireworksEnemy.cpp
-c:\users\c0116040\documents\visual studio 2015\projects\shootinggame\shootinggame\fireworksenemy.cpp(20): warning C4100: 'player': 引数は関数の本体部で 1 度も参照されません。
-  Main.cpp
-  コードを生成中...
-     ライブラリ C:\Users\C0116040\documents\visual studio 2015\Projects\ShootingGame\Debug\ShootingGame.lib とオブジェクト C:\Users\C0116040\documents\visual studio 2015\Projects\ShootingGame\Debug\ShootingGame.exp を作成中
+﻿  ApproacheEnemy.cpp
   ShootingGame.vcxproj -> C:\Users\C0116040\documents\visual studio 2015\Projects\ShootingGame\Debug\ShootingGame.exe
   ShootingGame.vcxproj -> C:\Users\C0116040\documents\visual studio 2015\Projects\ShootingGame\Debug\ShootingGame.pdb (Full PDB)

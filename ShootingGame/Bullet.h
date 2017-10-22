@@ -8,6 +8,6 @@ public:
 	Bullet(double x, double y, double radius, double xs, double xy);
 	~Bullet();
 	void update();
-	void draw();
+	void draw() = 0;
 };
 

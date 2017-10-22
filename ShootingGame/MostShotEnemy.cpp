@@ -20,6 +20,6 @@ void MostShotEnemy::update(Player& player) {
 
 }
 
-void MostShotEnemy::shot(Player& player) {
+void MostShotEnemy::shot(Player& player, EnemyBulletManager& ebm) {
 
 }

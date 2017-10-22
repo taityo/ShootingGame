@@ -7,7 +7,7 @@ public:
 	MostShotEnemy(double x, double y, int hp, double radius);
 	~MostShotEnemy();
 	void update(Player& player);
-	void shot(Player& player);
+	void shot(Player& player, EnemyBulletManager& ebm);
 	void draw();
 };
 
