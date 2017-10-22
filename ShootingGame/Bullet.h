@@ -7,6 +7,7 @@ public:
 	Vec2 speed;
 	Bullet(double x, double y, double radius, double xs, double xy);
 	~Bullet();
-	virtual void update() = 0;
+	void update();
+	void draw();
 };
 
