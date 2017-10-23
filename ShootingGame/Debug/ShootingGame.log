@@ -1,3 +1,4 @@
-﻿  ApproacheEnemy.cpp
+﻿  MostShotEnemy.cpp
+c:\users\c0116040\documents\visual studio 2015\projects\shootinggame\shootinggame\mostshotenemy.cpp(19): warning C4100: 'player': 引数は関数の本体部で 1 度も参照されません。
   ShootingGame.vcxproj -> C:\Users\C0116040\documents\visual studio 2015\Projects\ShootingGame\Debug\ShootingGame.exe
   ShootingGame.vcxproj -> C:\Users\C0116040\documents\visual studio 2015\Projects\ShootingGame\Debug\ShootingGame.pdb (Full PDB)

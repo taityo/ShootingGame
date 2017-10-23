@@ -18,23 +18,23 @@ void fireworksEnemy::draw() {
 }
 
 void fireworksEnemy::shot(Player& player, EnemyBulletManager& ebm) {
-
-}
-
-void fireworksEnemy::update(Player& player) {//ƒ‰ƒ“ƒ_ƒ€‚ÈˆÊ’u‚ÉˆÚ“®‚µAƒ‰ƒ“ƒ_ƒ€‚Èƒ^ƒCƒ~ƒ“ƒO‚Å’e‚ğ‘Å‚Â
+	//‰Ô‰Î‚Ì‚æ‚¤‚Éü‚è‚É’e‚ğ‘Å‚ÂB
 	if (pos == nextPos) {//‚±‚±‚Å‘Ò‚¿ŠÔ‚ğ’²®‚Å‚«‚é
-
 		if (count == 0) {
 			if (rand() % 5 != 0) {
 				nextPos = Vec2(Random(Window::Width()), Random(Window::Height() - 100));
 			}
 			else {
-				shot(player, EnemyBulletManager());//‚±‚±‚ğ•ÏX•K—v‚ª‚ ‚é
+				double bulletSpeed = 5;
+				for (int i = 0; i < 8; i++) {//‚Å‚«‚Ä‚é‚©‚í‚©‚ç‚È‚¢
+					double radian = i * 45 * Pi / 180;
+					ebm.add(pos.x, pos.y, 5, sin(radian)*bulletSpeed, cos(radian)*bulletSpeed);
+				}
 				count++;
 				return;
 			}
 		}
-		else if(count <= 60){
+		else if (count <= 60) {
 			count++;
 			return;
 		}
@@ -43,7 +43,9 @@ void fireworksEnemy::update(Player& player) {//ƒ‰ƒ“ƒ_ƒ€‚ÈˆÊ’u‚ÉˆÚ“®‚µAƒ‰ƒ“ƒ_ƒ€‚
 			nextPos = Vec2(Random(Window::Width()), Random(Window::Height() - 100));
 		}
 	}
+}
 
+void fireworksEnemy::update(Player& player) {//ƒ‰ƒ“ƒ_ƒ€‚ÈˆÊ’u‚ÉˆÚ“®‚µAƒ‰ƒ“ƒ_ƒ€‚Èƒ^ƒCƒ~ƒ“ƒO‚Å’e‚ğ‘Å‚Â
 	double x = this->nextPos.x - this->pos.x;
 	double y = -(this->nextPos.y - this->pos.y);
 	double radian = atan2(y, x);
