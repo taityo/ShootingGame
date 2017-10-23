@@ -4,32 +4,29 @@
 #include "ApproacheEnemy.h"
 #include "MostShotEnemy.h"
 #include "EnemyBulletManager.h"
+#include "EnemyManager.h"
 
 void Main()
 {
 	const Font font(30);
 	Player player(Window::Width()/2, Window::Height()-50, 100, 15, 5);
-	fireworksEnemy fe(Random(Window::Width()), 0, 10, 30);
-	ApproacheEnemy ae(Random(Window::Width()), Random(Window::Height() - 100), 10, 30);
 	EnemyBulletManager ebm;
-	MostShotEnemy me(Random(Window::Width()), Random(50), 10, 30);
+	EnemyManager em;
+
+	for (int i = 0; i < 5; i++) {
+		em.add(rand() % 3);
+	}
 
 	while (System::Update())
 	{
-		ae.shot(player, ebm);
-		fe.shot(player, ebm);
-		me.shot(player, ebm);
+		em.shot(player, ebm);
 
 		player.draw();
-		fe.draw();
-		ae.draw();
-		me.draw();
+		em.draw();
 		ebm.draw();
 
 		player.update();
-		fe.update(player);
-		ae.update(player);
-		me.update(player);
+		em.update(player);
 		ebm.update();
 	}
 }
