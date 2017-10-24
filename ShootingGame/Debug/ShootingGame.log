@@ -1,4 +1,4 @@
-﻿cl : コマンド ライン warning D9028: 簡易リビルド時のエラーです、通常のビルドに戻します
-  Main.cpp
+﻿  Main.cpp
+     ライブラリ C:\Users\C0116040\documents\visual studio 2015\Projects\ShootingGame\Debug\ShootingGame.lib とオブジェクト C:\Users\C0116040\documents\visual studio 2015\Projects\ShootingGame\Debug\ShootingGame.exp を作成中
   ShootingGame.vcxproj -> C:\Users\C0116040\documents\visual studio 2015\Projects\ShootingGame\Debug\ShootingGame.exe
   ShootingGame.vcxproj -> C:\Users\C0116040\documents\visual studio 2015\Projects\ShootingGame\Debug\ShootingGame.pdb (Full PDB)

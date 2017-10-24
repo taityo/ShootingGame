@@ -169,11 +169,13 @@
     <ClCompile Include="EnemyBulletManager.cpp" />
     <ClCompile Include="EnemyManager.cpp" />
     <ClCompile Include="fireworksEnemy.cpp" />
+    <ClCompile Include="GameManager.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="MostShotEnemy.cpp" />
     <ClCompile Include="Object.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="PlayerBullet.cpp" />
+    <ClCompile Include="PlayerBulletManager.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Resource.rc" />
@@ -295,10 +297,12 @@
     <ClInclude Include="EnemyBulletManager.h" />
     <ClInclude Include="EnemyManager.h" />
     <ClInclude Include="fireworksEnemy.h" />
+    <ClInclude Include="GameManager.h" />
     <ClInclude Include="MostShotEnemy.h" />
     <ClInclude Include="Object.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="PlayerBullet.h" />
+    <ClInclude Include="PlayerBulletManager.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -11,3 +11,7 @@ PlayerBullet::PlayerBullet(double x, double y, double radius, double xs, double 
 PlayerBullet::~PlayerBullet()
 {
 }
+
+void PlayerBullet::draw() {
+	Circle(this->pos, this->radius).draw(Color(0, 0, 255));
+}
